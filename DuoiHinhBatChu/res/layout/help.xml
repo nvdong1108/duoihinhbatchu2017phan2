@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/custom_dialog_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_help_x"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Trợ Giúp"
+            android:textColor="#00BFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_help"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_dialog_help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Mở một ô chữ trong đáp án, bạn sẽ bị trừ 15 điểm. Bạn có chắc chắn muốn mở không ?"
+            android:textColor="#00BFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ic_oke_dialog_help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_submit"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="Đồng ý"
+            android:textColor="#00BFFF" />
+
+        <Button
+            android:id="@+id/ic_no_dialog_help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_submit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Đóng"
+            android:textColor="#00BFFF" />
+    </LinearLayout>
+
+</LinearLayout>

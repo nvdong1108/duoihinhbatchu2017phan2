@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/img_welcome"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:text="Bạn có 100 điểm để bắt đầu cho trò chơi. Bạn hãy cố gắng để khám phá hết tất cả các câu hỏi nhé ..."
+            android:textColor="#000088"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_dong_dialog_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#CCFF33"
+            android:text="Đóng"
+            android:textColor="#000088" />
+    </LinearLayout>
+
+</LinearLayout>

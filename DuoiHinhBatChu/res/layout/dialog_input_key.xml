@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Mua Điểm"
+            android:textColor="#006400"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" 10000 vn Mua được 50 điểm "
+            android:textColor="#006400"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Để mua được điểm bạn có thể .Nhắn tin hoặc gọi điện thoại đến số điện thoai 0969 381 222. Nhắn tin với Tiêu Để #MuaDiem game đuổi hình bắt chữ số lượng điểm muốn mua. "
+            android:textColor="#006400" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Gửi tin nhắn đến facebook https://www.facebook.com/v.dong.1108 Zalo 0969 381 222"
+            android:textColor="#006400" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Với nội dung #Mua điểm game Đuổi hình bắt chữ số điểm muốn mua."
+            android:textColor="#006400" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Nhập KEY"
+            android:textColor="#006400"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_iputKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nhập key"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_xacnhan_inputkey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#EEE8AA"
+                android:text="Xác Nhận"
+                android:textColor="#006400" />
+
+            <Button
+                android:id="@+id/btn_thoat_inputkey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#EEE8AA"
+                android:text="Thoát"
+                android:textColor="#006400" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

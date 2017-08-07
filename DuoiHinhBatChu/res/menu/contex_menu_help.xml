@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/help_fist_word"
+        android:title="Mơ chữ cái đầu  -20 điểm ! "/>
+    <item
+        android:id="@+id/help_end_word"
+        android:title="Mở Chữ Cái Cuối -20 điểm !"/>
+    <item
+        android:id="@+id/help_mota"
+        android:title="Mô tả đáp án -30 điểm "/>
+
+</menu>
