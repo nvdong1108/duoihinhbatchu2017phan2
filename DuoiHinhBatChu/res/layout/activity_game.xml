@@ -90,10 +90,13 @@
             android:gravity="center"
             android:orientation="horizontal" >
 
-            <Space
+            <ImageView
+                android:id="@+id/ic_comment_info_img"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_comment_img" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -155,9 +158,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
+                android:background="@drawable/custom_click_all"
                 android:padding="2dp"
-                android:src="@drawable/ic_key" 
-                android:background="@drawable/custom_click_all"/>
+                android:src="@drawable/ic_key" />
         </LinearLayout>
 
         <ImageView

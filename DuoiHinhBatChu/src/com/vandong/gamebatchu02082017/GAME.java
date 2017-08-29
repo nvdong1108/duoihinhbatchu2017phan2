@@ -6,14 +6,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+
+import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.nvd.database.ManagerSqlite;
 import com.nvd.database.UploadImage;
 import com.nvd.objcauhoi.Cauhoi;
-import com.vandong.gamebatchu.R;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ActionBar.LayoutParams;
@@ -107,7 +107,6 @@ public class GAME extends Activity implements OnClickListener {
 	public MediaPlayer nhacnen;
 	public MediaPlayer nhacchienthang;
 	// quang cáo
-	private InterstitialAd inters;
 	AdView adview;
 
 	@Override
@@ -129,7 +128,7 @@ public class GAME extends Activity implements OnClickListener {
 		if (pre.getBoolean("welcome", true)) {
 			SharedPreferences.Editor edit = pre.edit();
 			edit.putBoolean("welcome", false);
-			showwelcome();
+			showwelcome("wecom");
 			edit.commit();
 		}
 
@@ -193,15 +192,16 @@ public class GAME extends Activity implements OnClickListener {
 
 	}
 
-	private void showwelcome() {
+	private void showwelcome(String type) {
 		final Dialog dl;
 		dl = new Dialog(GAME.this, R.style.My_Dialog_Theme);
 		dl.setContentView(R.layout.gioithieu);
 		dl.getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		dl.setCanceledOnTouchOutside(false);
 		dl.setCancelable(false);
-		dl.show();
 		Button btndong = (Button) dl.findViewById(R.id.btn_dong_dialog_welcome);
+//		TextView txtview = dl.findViewById(R.id.tx)
+		dl.show();
 		btndong.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -1297,7 +1297,8 @@ public class GAME extends Activity implements OnClickListener {
 
 		// set level cho game la số id của câu h�?i
 		// // set hình ảnh cho câu h�?i
-		img_cauhoi.setImageResource(CAUHOI.getHinhanh());
+		Glide.with(this).load(CAUHOI.getHinhanh()).into(img_cauhoi);
+//		img_cauhoi.setImageResource(CAUHOI.getHinhanh());
 		// // set số lượng ô số cho câu h�?i
 
 		HienButtonODapAn(CAUHOI.getDapan().length());
@@ -1503,6 +1504,7 @@ public class GAME extends Activity implements OnClickListener {
 		return true;
 	}
 
+	@SuppressLint("InflateParams")
 	public void KiemTraDapAn() {
 		LayoutInflater inflater = getLayoutInflater();
 		View layout = inflater.inflate(R.layout.mycustomtoast_layout, null);

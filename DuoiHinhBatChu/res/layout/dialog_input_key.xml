@@ -10,23 +10,12 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="Mua Điểm"
-            android:textColor="#006400"
-            android:textSize="25dp"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:orientation="vertical" >
 
@@ -34,28 +23,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text=" 10000 vn Mua được 50 điểm "
+            android:text=" Key là một dãy số gồm 8 chữ số. mỗi khi bạn nhập key vào thì điểm của bạn sẽ được cộng lên 50 điểm.
+            khi có điểm bạn có thể đổi câu , sử dụng trợ giúp mở ô chữ. Nếu trong quá trình chơi mà bạn gặp sự cố hoặc khó khăn thì 
+            bạn có thể liên hệ đến Facebook bên dưới để được giúp đỡ nhé."
             android:textColor="#006400"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Để mua được điểm bạn có thể .Nhắn tin hoặc gọi điện thoại đến số điện thoai 0969 381 222. Nhắn tin với Tiêu Để #MuaDiem game đuổi hình bắt chữ số lượng điểm muốn mua. "
-            android:textColor="#006400" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:gravity="left"
-            android:text="Gửi tin nhắn đến facebook https://www.facebook.com/v.dong.1108 Zalo 0969 381 222"
-            android:textColor="#006400" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Với nội dung #Mua điểm game Đuổi hình bắt chữ số điểm muốn mua."
+            android:padding="2dp"
+            android:text="Gửi tin nhắn đến facebook https://www.facebook.com/v.dong.1108 . Với nội dung là trò chơi đuổi hình bắt chữ"
             android:textColor="#006400" />
     </LinearLayout>
 

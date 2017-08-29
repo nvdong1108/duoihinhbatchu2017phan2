@@ -1,13 +1,7 @@
 package com.vandong.gamebatchu02082017;
-
-import java.util.ArrayList;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.nvd.database.ManagerSqlite;
-import com.nvd.objcauhoi.Cauhoi;
-import com.vandong.gamebatchu.R;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ActionBar.LayoutParams;

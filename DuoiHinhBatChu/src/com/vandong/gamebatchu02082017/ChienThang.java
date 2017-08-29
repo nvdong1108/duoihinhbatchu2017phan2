@@ -2,8 +2,6 @@ package com.vandong.gamebatchu02082017;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.vandong.gamebatchu.R;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ActionBar.LayoutParams;
